@@ -16,7 +16,7 @@ function Register() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:1112/api/user/register",
+        "https://contact-info-2ere.onrender.com/api/user/register",
         values
       );
       dispatch(hideLoading());

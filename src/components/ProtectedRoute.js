@@ -14,7 +14,7 @@ function ProtectedRoute(props) {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:1112/api/user/get-user-info-by-id",
+        "https://contact-info-2ere.onrender.com/api/user/get-user-info-by-id",
         { token: localStorage.getItem("token") },
         {
           headers: {
