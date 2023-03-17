@@ -306,6 +306,11 @@ const Home = () => {
                     content={
                       <div>
                         <p>
+                          {contactUser.name.title +
+                            ". " +
+                            contactUser.name.first +
+                            " " +
+                            contactUser.name.last}
                           {contactUser.location.street.number +
                             " " +
                             contactUser.location.street.name}
@@ -335,9 +340,9 @@ const Home = () => {
                         <p></p>
                       </div>
                     }
-                    title="Address"
+                    title="Profile Information"
                   >
-                    Personal Details
+                    Profile Info
                   </Popover>
                 </div>
               </Skeleton>
