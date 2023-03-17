@@ -1,0 +1,29 @@
+.Error404 {
+  padding: 12px;
+  background-color: red;
+  mix-blend-mode: screen;
+}
+
+.image-container {
+  background-image: url("https://www.gottabemobile.com/wp-content/uploads/2013/11/Contacts.jpg");
+  background-size: cover;
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
+.text {
+  background-color: green;
+  color: black;
+  font-size: 10vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
