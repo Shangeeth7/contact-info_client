@@ -33,7 +33,6 @@ const Home = () => {
   }, []);
 
   const handleScroll = useCallback(() => {
-    // Show the 'Back to Top' button when the scroll position is greater than 200
     setShowBackToTop(window.scrollY > 200);
 
     if (
@@ -132,6 +131,13 @@ const Home = () => {
                     content={
                       <div>
                         <p>
+                          {contactUser.name.title +
+                            ". " +
+                            contactUser.name.first +
+                            " " +
+                            contactUser.name.last}
+                        </p>
+                        <p>
                           {contactUser.location.street.number +
                             " " +
                             contactUser.location.street.name}
@@ -161,9 +167,9 @@ const Home = () => {
                         <p></p>
                       </div>
                     }
-                    title="Address"
+                    title="Profile Info"
                   >
-                    Personal Details
+                    Profile Information
                   </Popover>
                 </div>
               </Skeleton>
